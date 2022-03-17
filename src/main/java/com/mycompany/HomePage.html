@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>Apache Wicket Quickstart</title>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet'
+          type='text/css'/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet"/>
+</head>
+<body>
+<form class="col-md-12" wicket:id="submitForm">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <span>title</span>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-items: center">
+                <div class="col-md-6 input-group input-group-style">
+                    <input type="submit" wicket:id="frag1" value="frag1" class="label-style"/>
+                    <input type="submit" wicket:id="frag2" value="frag2" class="label-style"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<form wicket:id="createForm">
+    <span wicket:id="createPanel"></span>
+    <wicket:fragment class="col-md-12" wicket:id="frag1" id="frag1">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <span>frag 1 title</span>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="input-group margin-top-15 center-style">
+                    <label>label frag 1</label>
+                </div>
+            </div>
+        </div>
+    </wicket:fragment>
+    <wicket:fragment wicket:id="frag2" class="col-md-12" id="frag2">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <span>frag 2 title</span>
+                </div>
+            </div>
+            <div class="panel-body d-flex flex-column align-items-center">
+                <div class="input-group margin-top-15 center-style">
+                    <label>label frag 2</label>
+                </div>
+            </div>
+        </div>
+    </wicket:fragment>
+</form>
+</body>
+</html>
