@@ -1,5 +1,7 @@
 package com.mycompany;
 
+import com.mycompany.problems.fragmentpanelheading.HomePage;
+import com.mycompany.problems.fragmentpanelheading.WicketApplication;
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;

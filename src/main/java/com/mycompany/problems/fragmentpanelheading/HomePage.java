@@ -1,4 +1,4 @@
-package com.mycompany;
+package com.mycompany.problems.fragmentpanelheading;
 
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
